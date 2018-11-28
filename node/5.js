@@ -39,3 +39,13 @@
 
 
 // 可以用来做命令行扩展操作，例如一些第三方框架（vue脚手架等）
+
+
+
+// Stream
+
+// let stream=require('stream');
+
+// Buffer 用来操作二进制数据的(全局的，不需要require)
+let bf1=new Buffer(4);
+console.log(bf1);
