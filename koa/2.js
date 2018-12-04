@@ -6,7 +6,7 @@ const koaRouter=require('koa-router');
 const app = new Koa();
 const router=new koaRouter();
 // 只要有请求，则通过koaStaticCache 进行处理
-app.use(koaStaticCache(__dirname+'static',{
+app.use(koaStaticCache(__dirname+'/static',{
 	//root:__dirname+'/static', //与第一个参数一样，可以不用写
 	prefix:'/public',  //如果当前请求的url是以/public开始，则作为静态资源请求
 }));
