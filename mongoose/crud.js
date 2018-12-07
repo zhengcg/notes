@@ -29,8 +29,8 @@ const UserModel=mongoose.model('User',UserSchema);
 // 增加2
 
 // let user=new UserModel({
-// 	name:"张三",
-// 	age:13,
+// 	name:"张三新增",
+// 	age:131,
 // 	birthday:"2018-12-06"
 // });
 // user.save((err,res)=>{
@@ -70,8 +70,12 @@ const UserModel=mongoose.model('User',UserSchema);
 // 		console.log("修改成功")
 // 	}
 // })
-
-
+// 根据id修改
+// UserModel.findOneAndUpdate('5c08f362ae8dac1b84d9868c',{$set:{age:25}},err=>{
+// 	if(!err){
+// 		console.log("修改成功")
+// 	}
+// })
 // 查询
 
 // 1.基本查询
