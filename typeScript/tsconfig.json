@@ -1,0 +1,10 @@
+{
+	"compilerOptions":{
+		"module":"ES2015",
+		"target":"es2017",
+		"outDir":"./dist"
+	},
+	include:[
+			"./src/*"  //包含src目录下的所有文件;**可以匹配目录，编译后会带目录
+	]
+}
